@@ -9,8 +9,8 @@ public class TeperatureConverter {
 	return 273.15 + celsius;
     }
 
-    public static double kelvinToFahrenheit(double kelvin, int K) {
-	return (9/5*(K - 273) + 32) ; 
+    public static double kelvinToFahrenheit(double kelvin) {
+	return (9/5*(kelvin - 273) + 32); 
     }
 
     public static double kelvinToCelsius(double kelvin) {
@@ -22,7 +22,7 @@ public class TeperatureConverter {
     }
 
     public static double fahrenheitToKelvin(double fahrenheit) {
-	throw new UnsupportedOperationException("Not yet implemented"); // TODO Complete implementation
+	return (fahrenheit - 32) * 5/9 + 273.15;
     }
 
 }
