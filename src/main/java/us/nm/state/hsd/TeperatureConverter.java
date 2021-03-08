@@ -18,11 +18,11 @@ public class TeperatureConverter {
     }
 
     public static double fahrenheitToCelsius(double fahrenheit) {
-	return (fahrenheit - 32)* 5/9;
+	return (fahrenheit - 32)* 5.0/9.0;
     }
 
     public static double fahrenheitToKelvin(double fahrenheit) {
-	return (fahrenheit - 32) * 5/9 + 273.15;
+	return (fahrenheit - 32) * 5.0/9.0 + 273.15;
     }
 
 }
