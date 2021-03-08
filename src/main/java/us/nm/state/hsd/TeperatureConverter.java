@@ -10,7 +10,7 @@ public class TeperatureConverter {
     }
 
     public static double kelvinToFahrenheit(double kelvin) {
-	return (9/5*(kelvin - 273) + 32); 
+	return (kelvin - 273.15) * 9 / 5 + 32; 
     }
 
     public static double kelvinToCelsius(double kelvin) {
